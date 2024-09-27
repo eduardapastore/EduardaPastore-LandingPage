@@ -388,113 +388,107 @@ html{
     scroll-behavior: smooth;
 }
 
-@media screen and (max-width: 1040px) {
-    
-    /*generics*/
-
-    .html h1, h2, h3{
-        font-size: 32px;
-        line-height: -10px;
-    }
-
-    .flex{
-        flex-direction: column;
-    }
-
-     .topo-do-site .flex{
-        flex-direction: column-reverse;
-    }
-
-    /*header*/
-
-    header{
+/* RESPONSIVIDADE PARA TABLETS */
+@media (max-width: 1024px) {
+    header .interface {
         display: none;
     }
-    
-    /*topo-do-site*/
 
-    .topo-do-site h1{
+    .interface .flex{
+        flex-direction: column-reverse;
+        font-size: 16px;
+        padding: 10px 30px;
         text-align: center;
     }
-    .topo-do-site{
-        padding-bottom: 0px;
+
+    .sobremim, .especialidades-box, .cta {
+        margin: 40px;
     }
 
-    .topo-do-site p{
-        padding: 0px;
-        font-size: medium;
-        text-align: justify;
+    .sobremim .introducaosobremim p {
+        margin: 20px;
+        font-size: 16px;
+        text-align: center;
     }
 
-    /*sobre mim*/
-
-    .sobremim h1, p{
-        font-size: 32px;
+    .especialidades-box h1 {
+        font-size: 22px;
     }
 
-    /*especialidades*/
-
-    .especialidades{
-        margin: 100px;
+    .especialidades-box p {
+        font-size: 14px;
     }
 
-    .especialidades-box {
-        margin: 100px;
-        margin-bottom: -25px;
-        padding: -10px;;
-        color: var(--txtcolor);
-        border-radius: 16px;
-        justify-content: flex-start;
-
-        transition: .2s;
+    .rodape{
+        margin: 0%;;
     }
 
-    /*cta*/
-
-    .btn-cta{
-
-        margin-bottom: -70px;
+    .btn-cta button {
+        font-size: 16px;
+        padding: 15px 30px;
     }
 
-    button{
-        display: inline-block;
-        font-weight: 700;
-        cursor: pointer;
-        color: var(--txtcolor);
-        background-color: var(--buttons_iconscolor);
-        border: none;
-        transition: .2s;
-    }
-
-    .btnbutton :hover{
-        box-shadow: 0px 0px 18px #b618ff;
-        transform: scale(1.10);
-    }
-
-    /*rodapé*/
-
-    .rodape .lista, .logo{
+    .rodape .lista{
         display: none;
     }
-    
-    .btn-cta button :hover{
-        transform: scale(1.10);
-    }
-
 }
 
-@media screen and (max-width: 850px) {
-    
-    .especialidades{
-        margin: 30px;
+/* RESPONSIVIDADE PARA CELULARES */
+@media (max-width: 768px) {
+    header {
+        margin: 0;
+        padding: 0;
     }
 
-    h1{
-        font-size: 16px;
+    .menu-desktop ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
     }
-    
-    body{
-        margin: -20px;
-        padding: -20px;
+
+    section.topo-do-site {
+        margin: 20px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 200px;
+    }
+
+    .txt-topo-site h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .txt-topo-site p {
+        font-size: 14px;
+    }
+
+    .btn-contato button {
+        font-size: 12px;
+        padding: 8px 20px;
+    }
+
+    .sobremim, .especialidades-box, .cta {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .especialidades-box h1 {
+        font-size: 20px;
+    }
+
+    .especialidades-box p {
+        font-size: 12px;
+    }
+
+    .btn-cta button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .rodape .lista {
+        flex-direction: column;
+        gap: 10px;
     }
 }
+
