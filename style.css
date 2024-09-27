@@ -1,0 +1,500 @@
+*{
+    /*VARIÁVEIS*/
+    --bgcolor: #020101;
+    --txtcolor: #F6EDFF;
+    --indexcolor: #f6edff82;
+    --buttons_iconscolor: #B800BB;
+    --ff: "Sora";
+    --txt_buttonshadow: #D741DA;
+    --titulo: 28px;
+    --descricao: 18px;
+
+    /*TAMANHO DA PÁGINA*/
+    margin: 20;
+    padding: 5;
+    box-sizing: border-box;
+    font-family: var(--ff), sans-serif;
+}
+
+body{
+    background-color: var(--bgcolor);
+    height: 100vh;
+
+}
+
+body::-webkit-scrollbar {
+    padding: 12px;
+    width: 12px; 
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--bgcolor);      
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    border: 3px solid var(--buttons_iconscolor); 
+  }
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    background-color: var(--buttons_iconscolor);
+    padding: 10px 40px;
+    font-size: 14px;
+    border-radius: 24px;
+    font-weight: 600;
+    color: var(--txtcolor);
+    cursor: pointer;
+    border: 0;
+    display: inline-block;
+    transition: .2s; 
+}
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 18px #b618ff;
+    transform: scale(1.10);
+}
+
+h1{
+    color: var(--txtcolor);
+}
+
+span{
+    color: var(--txt_buttonshadow);
+    font-weight: 600;
+}
+
+/*HEADER*/
+
+header .btn-contato{
+    padding: 18px;
+}
+
+header{
+    margin: 100px;
+}
+
+header .interface{
+    margin: 78px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+header a{
+    color: var(--indexcolor);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: var(--txtcolor);
+    transform: scale(1.10);
+
+}
+
+.interface .titulo{
+    margin-top: 50px;
+}
+
+.menu-desktop ul{
+    list-style-type: none;
+}
+
+.menu-desktop li{
+    display: inline-block;
+    padding: 10px 40px;
+}
+
+/*TOPO DO SITE*/
+
+.topo-do-site .btn-contato button{
+    background-color: var(--buttons_iconscolor);
+    font-size: 48px;
+    padding: 15px 40px;
+    font-size: medium;
+    border-radius: 24px;
+    font-weight: 600;
+    color: var(--txtcolor);
+    cursor: pointer;
+    border: 0;
+    display: inline-block;
+    transition: .2s; 
+    margin: 30px;
+}
+
+.topo-do-site .btn-contato button :hover{
+    box-shadow: 0px 0px 18px #b618ff;
+    transform: scale(1.10);
+}
+
+section.topo-do-site{
+    margin: 150px;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.txt-topo-site  h1{
+    margin: 15px;
+    margin-bottom: 0px;
+    color: var(--txtcolor);
+    font-size: var(--titulo);
+    line-height: 40px;
+}
+
+.txt-topo-site p{
+    margin-left: 15px;
+    font-size: var(--descricao);
+    margin-bottom: 0px;
+    color: var(--txtcolor);
+}
+
+.topo-do-site span{
+    color: var(--txt_buttonshadow);
+}
+
+.topo-do-site .img-topo-site img{
+    border-radius: 1000px;
+    box-shadow: 0px 0px 24px #F6EDFF;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+.topo-do-site .btn-contato{
+    font-size: 24px;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%
+    {
+        top: 30px;
+    }
+}
+
+/*FIM TOPO DO SITE*/
+
+/*QUEM SOU EU?*/
+
+.sobremim{
+    margin: 78px;
+}
+
+.sobremim .titulo2{
+    font-size: var(--titulo);
+    color: var(--txtcolor);
+    text-align: center;
+}
+
+.sobremim .introducaosobremim h2{
+    font-size: 18px;
+    color: var(--txtcolor);
+    text-align: justify;
+    justify-content: center;
+}
+
+.sobremim .introducaosobremim p{
+    margin: 64px;
+    font-size: var(--descricao);
+    color: var(--txtcolor);
+    text-align: justify;
+}
+
+.sobremim .introducaosobremim span{
+    color: var(--txt_buttonshadow);
+}
+
+.sobremim .introducaosobremim{
+    font-size: 32px;
+    color: var(--txtcolor);
+    text-align: center;
+}
+
+.sobremim span{
+    font-weight: 700;
+    color: var(--bgcolor);
+}
+
+/*FIM QUEM SOU EU?*/
+
+/*ESPECIALIDADES*/
+
+
+
+section .especialidades{
+    margin: 78px;;
+    margin-bottom: 0px;
+    margin: 64px;
+}
+
+.titulo{
+    color: var(--txtcolor);
+    text-align: center;
+    font-size: var(--titulo);
+}
+
+.titulo span{
+    color: var(--txt_buttonshadow);
+}
+
+.especialidades-box .flex{
+    gap: 10px;
+}
+
+.especialidades-box{
+    margin: 78px;
+    margin-bottom: 0px;
+    color: var(--txtcolor);
+    padding: 40px;
+    justify-content: center;
+    border-radius: 24px;
+    transition: .2s;
+    backdrop-filter: blur(32px);
+    background-image: linear-gradient(
+        120deg,
+        rgba(0, 0, 0, 0.037),
+        rgba(113, 70, 126, 0.3)
+    );
+}
+
+.especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 24px var(--txt_buttonshadow);
+}
+
+.especialidades-box h1{
+    padding-bottom: 20px;
+    font-size: 24px;
+}
+
+.especialidades-box p{
+    font-size: 12px;
+    text-align: justify;
+    justify-content: center;
+}
+
+.especialidades-box i{
+    font-size: 32px;
+    color: var(--txt_buttonshadow);
+    justify-content: center;
+}
+
+/*FIM ESPECIALIDADES*/
+
+/*CTA*/
+
+
+.cta {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cta .titulo h1{
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.cta .titulo p{
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 20px;
+    font-size: var(--descricao);
+}
+
+.btn-cta button{
+    background-color: var(--buttons_iconscolor);
+    font-size: 18px;
+    padding: 20px 40px;
+    border-radius: 54px;
+    font-weight: 600;
+    color: var(--txtcolor);
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    transition: .2s; 
+}
+
+.btn-cta button :hover{
+    box-shadow: var(--txt_buttonshadow);
+    transform: scale(1.05);
+}
+
+/*FIM CTA*/
+
+/*RODAPÉ*/
+
+.rodape{
+    padding: 40px 4%;
+    z-index: 1;
+}
+
+.lista{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    list-style: none;
+}
+
+.lista a{
+    align-items: center;
+    color: var(--indexcolor);
+    transition: .2s;
+    display: inline-block;
+    cursor: pointer; 
+    text-decoration: none;
+}
+
+.lista li :hover{
+    color: var(--txtcolor);
+    transform: scale(1.10);
+}
+
+.rodape .btn-contato{
+    padding: 25px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    transition: .2s;
+}
+
+.btn-socials :hover{
+    transform: scale(1.05);
+}
+
+.txt-copyright h5{
+    font-weight: 400;
+    color: #f6edff77;
+    text-align: center;
+}
+
+/*FIM RODAPE*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 1040px) {
+    
+    /*generics*/
+
+    .html h1, h2, h3{
+        font-size: 32px;
+        line-height: -10px;
+    }
+
+    .flex{
+        flex-direction: column;
+    }
+
+     .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    /*header*/
+
+    header{
+        display: none;
+    }
+    
+    /*topo-do-site*/
+
+    .topo-do-site h1{
+        text-align: center;
+    }
+    .topo-do-site{
+        padding-bottom: 0px;
+    }
+
+    .topo-do-site p{
+        padding: 0px;
+        font-size: medium;
+        text-align: justify;
+    }
+
+    /*sobre mim*/
+
+    .sobremim h1, p{
+        font-size: 32px;
+    }
+
+    /*especialidades*/
+
+    .especialidades{
+        margin: 100px;
+    }
+
+    .especialidades-box {
+        margin: 100px;
+        margin-bottom: -25px;
+        padding: -10px;;
+        color: var(--txtcolor);
+        border-radius: 16px;
+        justify-content: flex-start;
+
+        transition: .2s;
+    }
+
+    /*cta*/
+
+    .btn-cta{
+
+        margin-bottom: -70px;
+    }
+
+    button{
+        display: inline-block;
+        font-weight: 700;
+        cursor: pointer;
+        color: var(--txtcolor);
+        background-color: var(--buttons_iconscolor);
+        border: none;
+        transition: .2s;
+    }
+
+    .btnbutton :hover{
+        box-shadow: 0px 0px 18px #b618ff;
+        transform: scale(1.10);
+    }
+
+    /*rodapé*/
+
+    .rodape .lista, .logo{
+        display: none;
+    }
+    
+    .btn-cta button :hover{
+        transform: scale(1.10);
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    
+    .especialidades{
+        margin: 30px;
+    }
+
+    h1{
+        font-size: 16px;
+    }
+    
+    body{
+        margin: -20px;
+        padding: -20px;
+    }
+}
