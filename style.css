@@ -3,9 +3,9 @@
     --bgcolor: #020101;
     --txtcolor: #F6EDFF;
     --indexcolor: #f6edff82;
-    --buttons_iconscolor: #B800BB;
+    --buttons_iconscolor: #A106F7;
     --ff: "Sora";
-    --txt_buttonshadow: #D741DA;
+    --txt_buttonshadow: #A106F7;
     --titulo: 28px;
     --descricao: 18px;
 
@@ -50,7 +50,7 @@ body::-webkit-scrollbar {
     cursor: pointer;
     border: 0;
     display: inline-block;
-    transition: .2s; 
+    transition: .4s; 
 }
 
 .btn-contato button:hover{
@@ -209,6 +209,7 @@ section.topo-do-site .flex{
     font-size: var(--descricao);
     color: var(--txtcolor);
     text-align: justify;
+    padding-bottom: 0%;
 }
 
 .sobremim .introducaosobremim span{
@@ -226,6 +227,12 @@ section.topo-do-site .flex{
     color: var(--bgcolor);
 }
 
+.sobremim .btn-contato button{
+    padding: 20px 40px;
+    font-size: 1.3rem;
+    border-radius: 32px;
+}
+
 /*FIM QUEM SOU EU?*/
 
 /*ESPECIALIDADES*/
@@ -233,7 +240,6 @@ section.topo-do-site .flex{
 
 
 section .especialidades{
-    margin: 78px;;
     margin-bottom: 0px;
     margin: 64px;
 }
@@ -249,28 +255,23 @@ section .especialidades{
 }
 
 .especialidades-box .flex{
-    gap: 10px;
+    gap: 5px;
 }
 
 .especialidades-box{
     margin: 78px;
     margin-bottom: 0px;
     color: var(--txtcolor);
-    padding: 40px;
+    padding: 30px;
     justify-content: center;
     border-radius: 24px;
-    transition: .2s;
-    backdrop-filter: blur(32px);
-    background-image: linear-gradient(
-        120deg,
-        rgba(0, 0, 0, 0.037),
-        rgba(113, 70, 126, 0.3)
-    );
+    transition: .4s;
+    border: 3px solid #a306f773;
 }
 
 .especialidades-box:hover{
     transform: scale(1.05);
-    box-shadow: 0 0 24px var(--txt_buttonshadow);
+    box-shadow: 0 0 24px #a306f773;
 }
 
 .especialidades-box h1{
